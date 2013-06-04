@@ -1,0 +1,58 @@
+/*
+ * Stylesheet accompanying the LOCKSSdm, the CONTENTdm LOCKSS Front End.
+ *
+ * Copyright 2013 Mark Jordan (mjordan@sfu.ca).
+ *
+ *
+ * Licensed under the MIT License; see MIT-LICENSE.txt for details.
+ */
+
+div.lockssdm_content_wrapper {
+   font-family: sans-serif;
+   font-size: 100%;
+   margin: 2em;
+}
+
+div.lockssdm_disclaimer {
+  font-family: sans-serif;
+  border: 1px solid;
+  font-size: 150%;
+  text-align: center;
+  padding: 4px;
+  margin: 4px;
+}
+
+div.lockssdm_item_thumbnail {
+  display: inline;
+  margin: 4px;
+}
+
+div.lockssdm_metadata_field {
+  margin-top: 3px;
+}
+
+div.lockssdm_compound_children_thumbnails {
+  margin-top: 1em;
+}
+
+div.lockssdm_link_to_parent {
+  margin-top: -1em;
+  margin-bottom: 1em;
+  font-size: 75%;
+}
+
+div.lockssdm_footer {
+  text-align: right;
+  margin-top: 2em;
+  font-size: 75%;
+}
+
+div.lockssdm_au_list, div.lockssdm_item_list {
+  margin-top: 1em;
+  margin-left: 2em;
+  font-size: 150%;
+}
+
+ul#dc_metadata {
+  display:none;
+}

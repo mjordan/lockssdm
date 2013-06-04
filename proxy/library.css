@@ -1,0 +1,25 @@
+/*************************************************************
+ * Sample CSS file for the LOCKSSdm Proxy scripot. Called from
+ * config.php, not lockssdm.php.
+ *************************************************************/
+
+div#local_header {
+  font-family: sans-serif;
+  padding: 4px;
+}
+
+div#local_header a img {
+  outline: none;
+}
+
+/**
+ * You can override styles defined in lockss.css.
+ */
+div.lockssdm_disclaimer {
+  font-family: sans-serif;
+  border: 1px solid;
+  font-size: 150%;
+  text-align: center;
+  padding: 4px;
+  margin: 4px;
+}
