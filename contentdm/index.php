@@ -47,6 +47,9 @@ function render_item($alias, $pointer) {
   $error_log = Zend_Registry::get('error_log');
   // $output .= Zend_Registry::get('lockssdm_disclaimer');
   $item_info = get_item_info($alias, $pointer);
+  // Add the Last-Modified header.
+  $last_modified = generate_http_last_modified($item_info['dmmodified']);
+  header('Last-Modified: ' . $last_modified, TRUE);
   // Format the item metadata.
   $output .= generate_metadata_tags($alias, $item_info);
   $output .= render_item_template($alias, $pointer, $item_info);
@@ -276,6 +279,18 @@ function generate_metadata_tags($alias, $item_info) {
   $output .= '</ul>';
 
   return $output;
+}
+
+/**
+ * Generate an RFC 1123 date string suitable for using as the value
+ * for an HTTP Last-Modified header. Input looks like "1994-11-06, 
+ * output must look like "Sun, 06 Nov 1994 08:49:37 GMT".
+ */
+function generate_http_last_modified($date) {
+  // We need to add hours:minutes:seconds.
+  $date = $date . ' 23:59:59';
+  $unixtime = strtotime($date);
+  return gmdate('D, d M Y H:i:s T', $unixtime);
 }
 
 ?>
