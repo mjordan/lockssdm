@@ -11,8 +11,8 @@
  * Licensed under the MIT License; see MIT-LICENSE.txt for details.
  */
 
-include('config.php');
-include('common.php');
+include_once('config.php');
+include_once('common.php');
 
 /**
  * Main router.
