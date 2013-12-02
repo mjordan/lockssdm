@@ -143,7 +143,7 @@ CONTENTdm.
   $static_manifests is set to TRUE. A typical value is provided here as
   an example:
   
-  $manifest_files_dir = '/usr/local/Content6/Website/public_html/ui/custom/default/collection/default/resources/custompages/lockss/';
+  $manifest_files_dir = '/usr/local/Content6/Website/public_html/ui/custom/default/collection/default/resources/custompages/lockssdm/';
   
 5) The list of CONTENTdm collections you want to preserve in your LOCKSS
   network. This list is a PHP associative array, and uses collection 'aliases'
