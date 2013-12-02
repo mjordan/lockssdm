@@ -133,7 +133,7 @@ CONTENTdm.
   the instructions above (step 4). Do not include either the leading or trailing
   slash.
 
-  $lockssdm_directory = 'lockss';
+  $lockssdm_directory = 'lockssdm';
 
 4) The path on the CONTENTdm server's file system where your plugin files
   will be uploaded to. To determine this path, go back to the file upload
