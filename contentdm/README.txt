@@ -186,6 +186,7 @@ are being generated. When the script stops running, upload all of the new
 .html files produced by the script to your LOCKSSdm plugin directory using
 same steps you used to upload index.php, aus.php, and the othe files, as
 described in step 6 in the section 'Installing the LOCKSSdm plugin' above.
+Also, make sure you click on the 'publish' button after uploading the files.
 
 
 Testing the plugin
@@ -197,7 +198,7 @@ you do not need to upload any additional files.
 
 Point your web browser at the following URL on your CONTENTdm server:
 
-  http://contentdm.yourlib.net/cdm/lockss/aus
+  http://contentdm.yourlib.net/cdm/lockssdm/aus
 
 where 'contentdm.yourlib.net' is your server's hostname and 'lockssdm'
 is the name of your plugin directory (i.e., the same value that you used
