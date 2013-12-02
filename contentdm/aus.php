@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Include file containing code used by both generate_aus.php and index.php.
+ * Include file containing code used by index.php.
  * Can also be run from the command line to generate manifest files for
  * uploading to the CONTENTdm server. Usage: php ./aus.php
  *
