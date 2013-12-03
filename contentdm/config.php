@@ -25,7 +25,7 @@ $server = 'http://contentdm.yourlibrary.net';
  * Change this variable to the subdirectory you created in the CONTENTdm 'Custom
  * pages' tool. Do not include either the leading or trailing slash.
  */
-$lockssdm_directory = 'lockss';
+$lockssdm_directory = 'lockssdm';
 
 /**
  * Change this variable to the path where you upload files in CONTENTdm's 'Custom
@@ -33,7 +33,7 @@ $lockssdm_directory = 'lockss';
  * Be sure to include the trailing slash. You only need to set this if $static_manifests,
  * above, is set to TRUE.
  */
-$manifest_files_dir = '/usr/local/Content6/Website/public_html/ui/custom/default/collection/default/resources/custompages/lockss/';
+$manifest_files_dir = '/usr/local/Content6/Website/public_html/ui/custom/default/collection/default/resources/custompages/lockssdm/';
 
 /**
  * Change this variable to an array of collections you want LOCKSS to harvest, using
