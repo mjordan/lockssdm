@@ -19,7 +19,12 @@ $static_manifests = TRUE;
 /**
  * Change this variable to your CONTENTdm server's hostname, without the trailing slash.
  */
-$server = 'http://contentdm.yourlibrary.net';
+$server = 'http://contentdmserver.yourlibrary.net';
+
+/**
+ * Change this variable to your CONTENTdm website's hostname, without the trailing slash.
+ */
+$website = 'http://contentdmwebsite.yourlibrary.net';
 
 /**
  * Change this variable to the subdirectory you created in the CONTENTdm 'Custom
