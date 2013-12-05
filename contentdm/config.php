@@ -57,12 +57,12 @@ $collections_to_harvest = array(
  */
 
 // Paths to various CONTENTdm utilities.
-$self = $server . '/cdm/' . $lockssdm_directory;
 $ws_url = $server . ':81/dmwebservices/index.php?q=';
-$thumbnail_url = $server . '/utils/getthumbnail/collection';
-$getimage_url = $server . '/utils/ajaxhelper/';
-$getfile_url = $server . '/utils/getfile/collection';
-$reference_url_base = $server . '/u/?';
+$self = $website. '/cdm/' . $lockssdm_directory;
+$thumbnail_url = $website . '/utils/getthumbnail/collection';
+$getimage_url = $website . '/utils/ajaxhelper/';
+$getfile_url = $website . '/utils/getfile/collection';
+$reference_url_base = $website . '/u/?';
 // Error log file.
 $error_log = '/tmp/lockssdm_error_log.txt';
 // Variable log file.
