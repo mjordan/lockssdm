@@ -228,10 +228,9 @@ function filter_metadata($alias, $item_metadata) {
     if (in_array($field_key, $admin_fields)) {
       unset($field_key);
     }
-
     // Replace nicknames with labels from collection configuration.
     for ($i = 0; $i < count($field_info); $i++) {
-      if ($field_key == $field_info[$i]['nick']) {
+      if (isset($field_key) && $field_key == $field_info[$i]['nick']) {
         $name = $field_info[$i]['name'];
         $item_metadata_with_lables[$name] = $field_value;
       }
@@ -256,12 +255,12 @@ function generate_metadata_tags($alias, $item_info) {
       unset($field_key);
     }
     // Filter out the fulltext field.
-    if ($field_key == 'full') {
+    if (isset($field_key) && $field_key == 'full') {
       unset($field_key);
     }
     // Replace nicknames with dc mappings from collection configuration.
     for ($i = 0; $i < count($field_info); $i++) {
-      if ($field_key == $field_info[$i]['nick']) {
+      if (isset($field_key) && $field_key == $field_info[$i]['nick']) {
         $dc = $field_info[$i]['dc'];
         if (is_string($field_value)) {
           $dc_label = $dc_field_info[$dc];
