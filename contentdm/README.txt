@@ -124,10 +124,15 @@ CONTENTdm.
 
   $static_manifests = TRUE;
   
-2) Your CONTENTdm server's hostname, including the 'http://' but without 
+2) Your CONTENTdm server's hostname, including the 'http://' but not 
   the trailing slash.
 
-  $server = 'http://contentdm.yourlib.net';
+  $server = 'http://contentdmserver.yourlibrary.net';
+
+2) Your CONTENTdm website's hostname, including the 'http://' but not
+  the trailing slash. This may be the same as $server.
+
+  $website = 'http://contentdmwebsite.yourlibrary.net';
   
 3) The subdirectory you created in the CONTENTdm 'Custom pages' tool, following
   the instructions above (step 4). Do not include either the leading or trailing

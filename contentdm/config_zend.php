@@ -48,7 +48,7 @@ if ($cli_mode == FALSE) {
   // Define this script's base URL. $request_parts[1] should be 'cdm' and $request_parts[2]
   // hould be the script's directory.
   $request_parts = explode('/', $_SERVER["REQUEST_URI"]);
-  Zend_Registry::set('self', $server . '/' . $request_parts[1] . '/' . $request_parts[2] . '/');
+  Zend_Registry::set('self', $website . '/' . $request_parts[1] . '/' . $request_parts[2] . '/');
 }
 
 ?>
