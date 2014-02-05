@@ -47,7 +47,7 @@ space to store the collections you intend to preserve.
 1) As the CONTENtdm admin user, log into your serve's website config tool
   at http://contentdm.yourlib.net/config/
 
-2) Click on 'Custom Pages/Scripts', and then 'Custom Pages.'
+2) On the 'Global' tab, click on 'Custom Pages/Scripts', and then 'Custom Pages.'
 
 3) Click on 'Add Custom Page.'
 
