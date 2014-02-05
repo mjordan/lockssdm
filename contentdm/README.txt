@@ -78,7 +78,7 @@ plugin zip file:
 
 You are now ready to upload the plugin files. Before you do so, you need
 to change some configuration settings in the 'config.php' file, described
-below. Make sure you upload config.php after you edit it.
+below in the 'Configuring the plugin' section.
 
 7) Upload lockssdm.css using CONTENTdm's 'Custom CSS' tool, which is linked
   in the left-hand menu within the web admin tool, in the 'Custom Pages /
