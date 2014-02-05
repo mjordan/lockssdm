@@ -129,18 +129,18 @@ CONTENTdm.
 
   $server = 'http://contentdmserver.yourlibrary.net';
 
-2) Your CONTENTdm website's hostname, including the 'http://' but not
+3) Your CONTENTdm website's hostname, including the 'http://' but not
   the trailing slash. This may be the same as $server.
 
   $website = 'http://contentdmwebsite.yourlibrary.net';
   
-3) The subdirectory you created in the CONTENTdm 'Custom pages' tool, following
+4) The subdirectory you created in the CONTENTdm 'Custom pages' tool, following
   the instructions above (step 4). Do not include either the leading or trailing
   slash.
 
   $lockssdm_directory = 'lockssdm';
 
-4) The path on the CONTENTdm server's file system where your plugin files
+5) The path on the CONTENTdm server's file system where your plugin files
   will be uploaded to. To determine this path, go back to the file upload
   dialog box you used in step 6, above. The path to your plugin files can
   be found at the top of the "Upload a file..." dialog box. Be sure to 
@@ -150,7 +150,7 @@ CONTENTdm.
   
   $manifest_files_dir = '/usr/local/Content6/Website/public_html/ui/custom/default/collection/default/resources/custompages/lockssdm/';
   
-5) The list of CONTENTdm collections you want to preserve in your LOCKSS
+6) The list of CONTENTdm collections you want to preserve in your LOCKSS
   network. This list is a PHP associative array, and uses collection 'aliases'
   (the unique abbreviation for each collection) and collection names stored
   with the aliases as array keys (on the left) and names as values (on the
