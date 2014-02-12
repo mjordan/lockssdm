@@ -187,11 +187,13 @@ you want them, and then, at a command line prompt, run the following command:
   php aus.php
   
 After a few seconds, you will see messages confirming that the manifests
-are being generated. When the script stops running, upload all of the new
-.html files produced by the script to your LOCKSSdm plugin directory using
-same steps you used to upload index.php, aus.php, and the othe files, as
-described in step 6 in the section 'Installing the LOCKSSdm plugin' above.
-Also, make sure you click on the 'publish' button after uploading the files.
+are being generated.
+
+When the script stops running, upload all of the new .html files produced by
+the script to your LOCKSSdm plugin directory (as defined in step 5 of "Configuring
+the plugin", above) using the same steps you used to upload index.php, aus.php,
+and the othe files. Also, make sure you click on the 'publish' button after
+uploading the files.
 
 
 Testing the plugin
