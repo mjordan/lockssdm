@@ -53,13 +53,14 @@ space to store the collections you intend to preserve.
 3) Click on 'Add Custom Page.'
 
 4) In the 'Name' field, enter 'lockssdm'. Keep 'Show this page on my website'
-  checked but uncheck 'Use website layout and styles'. This 'subdirectory'
-  will appear in the URLs created by the plugin.
+  checked but uncheck 'Use website layout and styles'.
 
-5) Click on 'save changes.'
+5) Click on 'save changes.' You will now have a 'lockssdm'
+  subdirectory in your 'custompages' directory on the CONTENTdm server and
+  this subdirectory will appear in the URLs created by the plugin.
 
 6) Upload the following files from the 'contentdm' directory in the LOCKSSdm
-plugin zip file:
+  plugin zip file:
 
   index.php
   aus.php
@@ -72,14 +73,14 @@ plugin zip file:
   in step 7, below.
   
   To upload the files, click on 'manage files'. In the 'name' column in
-  the file management dialog box, click on the directory name you created
-  in step 4, above. Then click on the 'Upload' tab. One file at a time,
-  choose the files listed above and upload them to the plugin directory
+  the file management dialog box, click on the 'lockssdm' directory you
+  created in step 4, above. Then click on the 'Upload' tab. One file at a
+  time, choose the files listed above and upload them to the plugin directory
   you have created.
 
-You are now ready to upload the plugin files. Before you do so, you need
-to change some configuration settings in the 'config.php' file, described
-below in the 'Configuring the plugin' section.
+  You have nw uploaded the plugin files. You still need to change some
+  configuration settings in the 'config.php' file, described below in the
+  'Configuring the plugin' section.
 
 7) Upload lockssdm.css using CONTENTdm's 'Custom CSS' tool, which is linked
   in the left-hand menu within the web admin tool, in the 'Custom Pages /
@@ -175,7 +176,7 @@ If you are running the plugin in 'static manifests' mode, you will need to
 generate the manifest files and upload them to your plugin directory. To
 generate the manifests, you need to run the 'aus.php' script at the command
 prompt on a computer with PHP installed. You can do this on a Windows, Mac,
-or Linux workstation, or upload all of the plugin files to a server running
+or Linux computer, or upload all of the plugin files to a server running
 PHP and run the aus.php script there; if you upload the files to a server
 to generate the manifests, you will need to download the manifests to your
 workstation in order to upload them to CONTENTdm (i.e., you can't ftp or scp
@@ -183,7 +184,8 @@ the manifests from a server to CONTENTdm, you must use the web-based admin
 tool to upload them).
 
 To generate the manifest files, make sure the options in config.php are as
-you want them, and then, at a command line prompt, run the following command:
+you want them (and that the config.php file is in the same directory as
+aus.php), and then, at a command line prompt, run the following command:
 
   php aus.php
   
@@ -215,6 +217,9 @@ of Archival units corresponding to the list of collections you identified
 in the $collections_to_harvest configuration variable. The list may contain
 more than one Archival Unit link per collection, depending on the size of
 the collections.
+
+Don't worry that your custom CONTENTdm header is not showing up - that's
+intentional.
 
 If you click on each link, you will see that Archival Unit's manifest page.
 If you then click on an item-level link on the manifest page, you will see
