@@ -165,7 +165,7 @@ CONTENTdm.
     '/baz' => 'Collection Baz',
   );
   
-Once you have changed the configuration values, upload config.txt to your
+Once you have changed the configuration values, upload config.php to your
 plugin directory.
 
 
